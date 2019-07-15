@@ -13,40 +13,36 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_layout_toLeftOf="true"
+            android:text="val1"
             android:id="@+id/editText1"/>
 
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_layout_toLeftOf="true"
+            android:text="val2"
             android:id="@+id/editText2"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_layout_toLeftOf="true"
             android:text="+"
             android:id="@+id/button1"/>
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_layout_toLeftOf="true"
             android:text="-"
             android:id="@+id/button2" />
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_layout_toLeftOf="true"
             android:text="x"
             android:id="@+id/button3" />
 
     <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_layout_toLeftOf="true"
+            android:layout_width="44dp"
+            android:layout_height="114dp"
             android:text="/"
-            android:id="@+id/button4" />
+            android:id="@+id/button4"/>
 
 </RelativeLayout>

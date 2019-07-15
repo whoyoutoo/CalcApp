@@ -11,24 +11,8 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        val value1 = intent.getIntExtra("VALUE1", 0)
-        val value2 = intent.getIntExtra("VALUE2", 0)
-
-        button1.setOnClickListener {
-            textView.text = "${value1 + value2}"
-        }
-
-        button2.setOnClickListener {
-            textView.text = "${value1 - value2}"
-        }
-
-        button3.setOnClickListener {
-            textView.text = "${value1 * value2}"
-        }
-
-        button4.setOnClickListener {
-            textView.text = "${value1 / value2}"
-        }
+        textView.text = "VALUE"
+    }
 
     }
 }
