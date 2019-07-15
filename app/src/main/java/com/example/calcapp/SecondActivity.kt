@@ -2,7 +2,6 @@ package com.example.calcapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
@@ -11,8 +10,9 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        textView.text = "VALUE"
+        val sum = intent.getDoubleExtra("sum",0.0)
+
+        textView.text = editText.text.toString(sum)
     }
 
-    }
 }

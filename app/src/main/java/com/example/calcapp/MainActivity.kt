@@ -25,22 +25,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var text1 = editText1.text.toString();
         var text2 = editText2.text.toString();
 
-        val a : Int = Integer.parseInt(text1)
-        val b : Int = Integer.parseInt(text2)
+        val a : Double = text1.toDouble()
+        val b : Double = text2.toDouble()
+        val sum : Double = 0.0
 
         if(v!=null){
             if(v.id==R.id.button1) {
-                textView.text = "${a + b}"
+                sum = a + b
             } else if(v.id==R.id.button2) {
-                textView.text = "${a - b}"
+                sum = a - b
             }else if(v.id==R.id.button3) {
-                textView.text = "${a * b}"
+                sum = a * b
             }else if(v.id==R.id.button4) {
-                textView.text = "${a / b}"
+                sum = a / b
             }
 
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("VALUE", "textView.text")
+            intent.putExtra("sum", sum)
             startActivity(intent)
         }
     }
