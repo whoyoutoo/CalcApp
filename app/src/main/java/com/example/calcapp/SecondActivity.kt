@@ -12,6 +12,6 @@ class SecondActivity : AppCompatActivity() {
 
         var sum = intent.getDoubleExtra("sum", 0.0)
 
-        textView.text = "${sum}"
+        textView.text = "結果は　${sum}"
     }
 }
