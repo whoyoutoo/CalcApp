@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val a : Double = text1.toDouble()
         val b : Double = text2.toDouble()
-        val sum : Double = 0.0
+
+        var sum : Double = 0.0
 
         if(v!=null){
             if(v.id==R.id.button1) {

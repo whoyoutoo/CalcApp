@@ -10,9 +10,8 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        val sum = intent.getDoubleExtra("sum",0.0)
+        var sum = intent.getDoubleExtra("sum", 0.0)
 
-        textView.text = editText.text.toString(sum)
+        textView.text = "${sum}"
     }
-
 }
