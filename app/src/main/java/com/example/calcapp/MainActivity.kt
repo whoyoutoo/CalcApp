@@ -4,8 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_second.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -25,10 +25,24 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var text1 = editText1.text.toString();
         var text2 = editText2.text.toString();
 
-        val a : Double = text1.toDouble()
-        val b : Double = text2.toDouble()
+        var a : Double = text1.toDouble()
+        var b : Double = text2.toDouble()
 
         var sum : Double = 0.0
+
+        try {
+            a = null
+        } catch (e: Exception) {
+            Snackbar.make(editText1, "Put in", Snackbar.LENGTH_INDEFINITE)
+            Snackbar.make(editText2, "Put in", Snackbar.LENGTH_INDEFINITE)
+        }
+
+        try {
+            b = null
+        } catch (e: Exception) {
+            Snackbar.make(editText1, "Put in", Snackbar.LENGTH_INDEFINITE)
+            Snackbar.make(editText2, "Put in", Snackbar.LENGTH_INDEFINITE)
+        }
 
         if(v!=null){
             if(v.id==R.id.button1) {
