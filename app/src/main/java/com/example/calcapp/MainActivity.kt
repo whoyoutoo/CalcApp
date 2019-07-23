@@ -25,33 +25,33 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var text1 = editText1.text.toString();
         var text2 = editText2.text.toString();
 
-        var a : Double = text1.toDouble()
-        var b : Double = text2.toDouble()
+        var a: Double = text1.toDouble()
+        var b: Double = text2.toDouble()
 
-        var sum : Double = 0.0
+        var sum: Double = 0.0
 
         try {
-            a = null
+            text1.count() == 0
         } catch (e: Exception) {
             Snackbar.make(editText1, "Put in", Snackbar.LENGTH_INDEFINITE)
             Snackbar.make(editText2, "Put in", Snackbar.LENGTH_INDEFINITE)
         }
 
         try {
-            b = null
+            text2.count() == 0
         } catch (e: Exception) {
             Snackbar.make(editText1, "Put in", Snackbar.LENGTH_INDEFINITE)
             Snackbar.make(editText2, "Put in", Snackbar.LENGTH_INDEFINITE)
         }
 
-        if(v!=null){
-            if(v.id==R.id.button1) {
+        if (v != null) {
+            if (v.id == R.id.button1) {
                 sum = a + b
-            } else if(v.id==R.id.button2) {
+            } else if (v.id == R.id.button2) {
                 sum = a - b
-            }else if(v.id==R.id.button3) {
+            } else if (v.id == R.id.button3) {
                 sum = a * b
-            }else if(v.id==R.id.button4) {
+            } else if (v.id == R.id.button4) {
                 sum = a / b
             }
 
